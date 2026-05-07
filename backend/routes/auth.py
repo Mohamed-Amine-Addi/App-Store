@@ -48,10 +48,16 @@ def get_current_user():
     return user
 
 def _send_email(to_email, subject, html_body):
-    """Send email via SMTP. Silently logs error if credentials not set."""
     if not SMTP_USER or not SMTP_PASS:
-        print(f"[EMAIL SKIPPED] To: {to_email} | Subject: {subject}")
-        print("[TIP] Set SMTP_USER and SMTP_PASS env vars to send real emails.")
+        # Extract code from HTML for dev display
+        import re
+        match = re.search(r'letter-spacing:10px[^>]*>(\d{6})<', html_body)
+        code_found = match.group(1) if match else '??????'
+        print(f"\n{'='*50}")
+        print(f"📧 EMAIL TO: {to_email}")
+        print(f"📌 SUBJECT:  {subject}")
+        print(f"🔑 CODE:     {code_found}")
+        print(f"{'='*50}\n")
         return
     try:
         msg = MIMEMultipart('alternative')
@@ -65,7 +71,6 @@ def _send_email(to_email, subject, html_body):
             s.sendmail(SMTP_USER, to_email, msg.as_string())
     except Exception as e:
         print(f"[EMAIL ERROR] {e}")
-
 def _welcome_email(username, code):
     return f"""
 <!DOCTYPE html>
