@@ -159,3 +159,4 @@ def change_password():
     conn.commit()
     conn.close()
     return jsonify({'message': 'Password changed successfully!'})
+
