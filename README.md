@@ -165,3 +165,134 @@ mini-app-store/
 │   └── requirements.txt
 │
 └── README.md
+
+# ⚙️ Installation & Setup
+
+## 📥 Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/mini-app-store.git
+
+cd mini-app-store
+```
+
+---
+
+# 🖥️ Backend Setup (Flask)
+
+## 1️⃣ Navigate to backend folder
+
+```bash
+cd backend
+```
+
+## 2️⃣ Create virtual environment
+
+### Windows
+```bash
+python -m venv venv
+```
+
+### Linux / macOS
+```bash
+python3 -m venv venv
+```
+
+---
+
+## 3️⃣ Activate virtual environment
+
+### Windows
+```bash
+venv\Scripts\activate
+```
+
+### Linux / macOS
+```bash
+source venv/bin/activate
+```
+
+---
+
+## 4️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 5️⃣ Run Flask server
+
+```bash
+python app.py
+```
+
+Backend will start on:
+
+```bash
+http://localhost:5000
+```
+
+---
+
+# 🎨 Frontend Setup (React)
+
+## 1️⃣ Open a new terminal
+
+```bash
+cd frontend
+```
+
+---
+
+## 2️⃣ Install npm packages
+
+```bash
+npm install
+```
+
+---
+
+## 3️⃣ Start React application
+
+```bash
+npm start
+```
+
+Frontend will run on:
+
+```bash
+http://localhost:3000
+```
+
+---
+
+# 🗄️ Database Setup
+
+The project uses SQLite by default.
+
+Database file:
+
+```bash
+backend/database/app.db
+```
+
+No additional database installation is required.
+
+---
+
+# ✅ Ready to Use
+
+Once both servers are running:
+
+- Frontend → `http://localhost:3000`
+- Backend → `http://localhost:5000`
+
+You can now:
+
+✅ Install mini apps  
+✅ Open applications  
+✅ Manage utilities  
+✅ Play mini games  
+✅ Test the full platform
