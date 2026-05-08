@@ -70,3 +70,5 @@ export default function Navbar({ page, setPage, installedCount, user, onLogout, 
     </>
   );
 }
+
+

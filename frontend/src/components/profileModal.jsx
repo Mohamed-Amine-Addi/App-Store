@@ -299,3 +299,4 @@ export default function ProfileModal({ user, onClose, onLogout, onUpdate }) {
     </div>
   );
 }
+

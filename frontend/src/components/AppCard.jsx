@@ -99,3 +99,4 @@ export default function AppCard({ app, onInstall, onUninstall, onRun, loading })
     </div>
   );
 }
+

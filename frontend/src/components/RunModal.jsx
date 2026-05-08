@@ -149,6 +149,7 @@ function CalculatorApp() {
     return '#18182a';
   };
 
+  
   return (
     <div style={{ display:'flex', gap:'1rem' }}>
       <div style={{ flex:1 }}>
