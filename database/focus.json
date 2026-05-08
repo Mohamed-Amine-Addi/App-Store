@@ -1,11 +1,4 @@
 {
   "sessions": [],
-  "current": {
-    "id": 1,
-    "label": "Focus session",
-    "duration_m": 1,
-    "started_at": "2026-05-02T22:53:02.961191+00:00",
-    "ends_at": 1777762442.961191,
-    "done": false
-  }
+  "current": null
 }
